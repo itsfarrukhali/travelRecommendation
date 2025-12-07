@@ -172,34 +172,33 @@ body {
   background-color: #1976D2;
 }
 
-/* Results Container */
-.results-container {
-  padding: 50px;
-  background-color: rgba(255, 255, 255, 0.95);
-  margin: 50px;
-  border-radius: 20px;
-  min-height: 400px;
+/* Results Hidden Initially */
+#results {
+  display: none;
 }
 
-.recommendation-card {
+/* When Search Triggered */
+#results.active {
   display: flex;
-  gap: 30px;
-  margin-bottom: 30px;
-  padding: 20px;
-  background-color: white;
-  border-radius: 15px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  margin: 20px auto;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* Cards */
+.recommendation-card {
+  width: 300px;
+  background: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
 .recommendation-card img {
-  width: 300px;
+  width: 100%;
   height: 200px;
   object-fit: cover;
-  border-radius: 10px;
-}
-
-.recommendation-info {
-  flex: 1;
 }
 
 .recommendation-info h3 {
