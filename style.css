@@ -1,0 +1,432 @@
+/* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-image: url('images/background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: #333;
+  min-height: 100vh;
+  position: relative;
+}
+
+/* Social Bar */
+.social-bar {
+  position: fixed;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  z-index: 100;
+}
+
+.social-bar img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+
+.social-bar img:hover {
+  transform: scale(1.2);
+}
+
+/* Navigation Bar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+}
+
+.nav-left h1 {
+  color: white;
+  font-size: 24px;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.nav-right a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+.nav-right a:hover {
+  color: #4CAF50;
+}
+
+/* Search Container (Only on Home Page) */
+.search-container {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+#searchInput {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 25px;
+  width: 300px;
+  font-size: 16px;
+}
+
+.btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: all 0.3s;
+}
+
+.search-btn {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.search-btn:hover {
+  background-color: #45a049;
+}
+
+.clear-btn {
+  background-color: #f44336;
+  color: white;
+}
+
+.clear-btn:hover {
+  background-color: #d32f2f;
+}
+
+/* Hero Section */
+.hero {
+  padding: 100px 50px;
+  color: white;
+  max-width: 800px;
+}
+
+.hero-content {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 50px;
+  border-radius: 20px;
+  backdrop-filter: blur(5px);
+}
+
+.hero h2 {
+  font-size: 60px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.hero p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  max-width: 600px;
+}
+
+.book-btn {
+  padding: 15px 40px;
+  background-color: #2196F3;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.book-btn:hover {
+  background-color: #1976D2;
+}
+
+/* Results Container */
+.results-container {
+  padding: 50px;
+  background-color: rgba(255, 255, 255, 0.95);
+  margin: 50px;
+  border-radius: 20px;
+  min-height: 400px;
+}
+
+.recommendation-card {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.recommendation-card img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.recommendation-info {
+  flex: 1;
+}
+
+.recommendation-info h3 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.recommendation-info p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #666;
+}
+
+/* About Page Styles */
+.about-content {
+  padding: 80px 50px;
+  color: white;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.company-info {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 40px;
+  border-radius: 15px;
+  margin-bottom: 50px;
+}
+
+.company-info h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+  color: #4CAF50;
+}
+
+.company-info p {
+  font-size: 18px;
+  line-height: 1.8;
+  margin-bottom: 15px;
+}
+
+.team-section h2 {
+  font-size: 36px;
+  color: #4CAF50;
+  margin-bottom: 30px;
+}
+
+.team-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.team-member {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.team-member:hover {
+  transform: translateY(-10px);
+}
+
+.team-member img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+  border: 5px solid #4CAF50;
+}
+
+.team-member h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.team-member .role {
+  color: #4CAF50;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.team-member p {
+  color: #ccc;
+  line-height: 1.6;
+}
+
+/* Contact Page Styles */
+.contact-content {
+  padding: 80px 50px;
+  color: white;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.contact-content h2 {
+  font-size: 40px;
+  color: #4CAF50;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.contact-subtitle {
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 40px;
+  color: #ccc;
+}
+
+.contact-form {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 40px;
+  border-radius: 15px;
+  margin-bottom: 40px;
+}
+
+.form-group {
+  margin-bottom: 25px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 8px;
+  color: white;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 12px 15px;
+  font-size: 16px;
+  border: 2px solid #4CAF50;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.9);
+  transition: border-color 0.3s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #2196F3;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 15px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+  background-color: #45a049;
+}
+
+.contact-info {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.contact-info h3 {
+  font-size: 24px;
+  color: #4CAF50;
+  margin-bottom: 20px;
+}
+
+.contact-info p {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #ccc;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar {
+      flex-direction: column;
+      gap: 20px;
+      padding: 20px;
+  }
+  
+  .nav-right {
+      flex-direction: column;
+      gap: 15px;
+      width: 100%;
+  }
+  
+  .search-container {
+      width: 100%;
+  }
+  
+  #searchInput {
+      width: 100%;
+  }
+  
+  .hero {
+      padding: 50px 20px;
+  }
+  
+  .hero h2 {
+      font-size: 40px;
+  }
+  
+  .social-bar {
+      position: static;
+      flex-direction: row;
+      justify-content: center;
+      transform: none;
+      margin: 20px;
+  }
+  
+  .recommendation-card {
+      flex-direction: column;
+  }
+  
+  .recommendation-card img {
+      width: 100%;
+  }
+}

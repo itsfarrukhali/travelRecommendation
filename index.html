@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel Recommendation - Explore Dream Destinations</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Social Media Icons -->
+    <div class="social-bar">
+      <a href="#"><img src="images/twitter.png" alt="Twitter" /></a>
+      <a href="#"><img src="images/facebook.png" alt="Facebook" /></a>
+      <a href="#"><img src="images/instagram.jpg" alt="Instagram" /></a>
+      <a href="#"><img src="images/youtube.png" alt="YouTube" /></a>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+      <div class="nav-left">
+        <img src="images/logo.png" alt="TravelBloom Logo" class="logo" />
+        <h1>Travel Recommendation</h1>
+      </div>
+      <div class="nav-right">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact Us</a>
+        <div class="search-container">
+          <input
+            type="text"
+            id="searchInput"
+            placeholder="Enter a destination or keyword"
+          />
+          <button id="searchBtn" class="btn search-btn">Search</button>
+          <button id="clearBtn" class="btn clear-btn">Clear</button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <main class="hero">
+      <div class="hero-content">
+        <h2>EXPLORE<br />DREAM<br />DESTINATION</h2>
+        <p>
+          It encourages exploration of unfamiliar territories, embracing diverse
+          cultures and landscapes, while pursuing the desired destination that
+          captivates the heart and ignites a sense of wonder.
+        </p>
+        <button class="book-btn">BOOK NOW</button>
+      </div>
+    </main>
+
+    <!-- Search Results Section -->
+    <section id="results" class="results-container">
+      <!-- Results will be populated here by JavaScript -->
+    </section>
+    <footer>
+      <p>&copy; 2023 Travel Recommendation. All rights reserved.</p>
+    </footer>
+
+    <script src="travel_recommendation.js"></script>
+  </body>
+</html>
